@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../header.css">
+    <link rel="stylesheet" href="../forms-style.css">
+    <title>Пополнить баланс</title>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Билеты</h1>
+        <div class="header-content">
+            <div class="header-navigation-buttons">
+                <a href="../index.html" class="header-button">Личный кабинет</a>
+                <a href="../buy/buy.html" class="header-button">Купить билет</a>
+            </div>
+            <div class="header-right-buttons">
+                <div class="balance">
+                    <b><span id="balance-value"></span> BYN</b>
+                    <a href="" class="increase-balance-link">Пополнить счёт</a>
+                </div>
+                <a class="header-button log-out" id="logOut">Выйти</a>
+            </div>
+        </div>
+        <img id="burger-button" src="../img/burger-menu.svg">
+    </div>
+    <div class="main">
+        <div class="form">
+            <h1>Пополнение баланса</h1>
+            <div class="content">
+                <input type="text" placeholder="Номер карты">
+                <input type="text" placeholder="Срок действия карты">
+                <input type="text" placeholder="Код на обратной стороне">
+                <input type="number" min="1" id="money" placeholder="Сумма (BYN)">
+                <div class="error">Неверный логин или пароль</div>
+                <div class="button" id="balanceButton">Пополнить</div>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header"><img id="sidebar-arrow" src="../img/arrow.svg"></div>
+        <a href="../" class="sidebar-button">Личный кабинет</a>
+        <a href="../buy/buy.html" class="sidebar-button">Купить билет</a>
+        <a href="./balance.html" class="sidebar-button">Пополнить счёт <span id="sidebar-balance-value"></span></a>
+        <a class="sidebar-button log-out" id="sidebarLogOut">Выйти</a>
+    </div>
+</body>
+<script src="../http.js"></script>
+<script src="../navigation.js"></script>
+<script src="../header.js"></script>
+<script src="./balance.js"></script>
+</html>

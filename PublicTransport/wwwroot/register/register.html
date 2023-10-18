@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="../forms-style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="form">
+            <h1>Регистрация</h1>
+            <div class="content">
+                <input type="text" id="passportNumber" placeholder="номер паспорта">
+                <input type="text" id="passwortId" placeholder="идентификационный номер">
+                <input type="text" id="firstName" placeholder="имя">
+                <input type="text" id="lastName" placeholder="фамилия">
+                <input type="password" id="password" placeholder="пароль">
+                <div class="error" id="invalidData">Некоректные данные</div>
+                <div class="error" id="userExist">Пользователь существует</div>
+                <div class="button" id="register-button">Зарегистрироваться</div>
+            </div>
+        </div>
+        <p>Уже eсть аккаунт? <a href="../login/login.html">Войти</a></p>
+    </div>
+</body>
+<script src="../http.js"></script>
+<script src="../navigation.js"></script>
+<script src="./register.js"></script>
+
+</html>

@@ -1,0 +1,64 @@
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+* {
+    font-family: Roboto;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: rgba(96, 96, 227, 0.032);
+}
+
+.ticket {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 320px;
+    min-width: 300px;
+    background-color: rgba(96, 96, 227, 0.036);
+    border: solid 1px #6060e3;
+    border-top-width: 5px;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 14px;
+    color: rgb(44, 44, 44);
+    transition: .25s;
+}
+
+.ticket p {
+    margin: 5px 0;
+    text-align: center;
+}
+
+.ticket span {
+    font-weight: bold;
+}
+
+.ticket-img {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.button {
+    width: 100%;
+    margin: 20px auto 0 auto;
+    background-color: #6060e3;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: .2s;
+    -webkit-tap-highlight-color: transparent;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #4444da;
+}

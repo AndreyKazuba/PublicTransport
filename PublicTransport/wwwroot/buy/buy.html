@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../header.css">
+    <link rel="stylesheet" href="./buy.css">
+    <title>Покупка</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Билеты</h1>
+        <div class="header-content">
+            <div class="header-navigation-buttons">
+                <a href="../index.html" class="header-button">Личный кабинет</a>
+                <a href="./buy.html" class="header-button">Купить билет</a>
+            </div>
+            <div class="header-right-buttons">
+                <div class="balance">
+                    <b><span id="balance-value"></span> BYN</b>
+                    <a href="../balance/balance.html" class="increase-balance-link">Пополнить счёт</a>
+                </div>
+                <a class="header-button log-out" id="logOut">Выйти</a>
+            </div>
+        </div>
+        <img id="burger-button" src="../img/burger-menu.svg">
+    </div>
+    <div class="buy-content">
+        <div class="transport-types">
+            <div class="transport-type" data-type="1">
+                <img src="../img/bus.svg">
+            </div>
+            <div class="transport-type" data-type="3">
+                <img src="../img/tram.svg">
+            </div>
+            <div class="transport-type" data-type="2">
+                <img src="../img/trolleybus.svg">
+            </div>
+        </div>
+        <p class="tip" id="tip">Выберите тип транспорта</p>
+        <div class="transport-numbers" id="transportNumbers">
+        </div>
+        <div class="buy-form" id="buy-form">
+            <p>Стоимость билета: <b>2 BYN</b></p>
+            <div class="button" id="buyButton">Купить</div>
+            <a href="../balance/balance.html" class="error" id="error">Недостаточно средств</a>
+        </div>
+    </div>
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header"><img id="sidebar-arrow" src="../img/arrow.svg"></div>
+        <a href="../" class="sidebar-button">Личный кабинет</a>
+        <a href="./buy.html" class="sidebar-button">Купить билет</a>
+        <a href="../balance/balance.html" class="sidebar-button">Пополнить счёт <span id="sidebar-balance-value"></span></a>
+        <a class="sidebar-button log-out" id="sidebarLogOut">Выйти</a>
+    </div>
+</body>
+<script src="../http.js"></script>
+<script src="../navigation.js"></script>
+<script src="../header.js"></script>
+<script src="./buy.js"></script>
+</html>

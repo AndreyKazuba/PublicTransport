@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Войти</title>
+    <link rel="stylesheet" href="../forms-style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="form">
+            <h1>Вход</h1>
+            <div class="content">
+                <input type="text" id="passportId" placeholder="номер паспорта">
+                <input type="password" id="password" placeholder="пароль">
+                <div class="error" id="error">Неверный номер или пароль</div>
+                <div class="button" id="signInButton">Войти</div>
+            </div>
+        </div>
+        <p>Нет аккаунта? <a href="../register/register.html">Зарегистрироваться</a></p>
+    </div>
+</body>
+<script src="../http.js"></script>
+<script src="../navigation.js"></script>
+<script src="./login.js"></script>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Личный кабинет</title>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Билеты</h1>
+        <div class="header-content">
+            <div class="header-navigation-buttons">
+                <a href="./" class="header-button">Личный кабинет</a>
+                <a href="./buy/buy.html" class="header-button">Купить билет</a>
+            </div>
+            <div class="header-right-buttons">
+                <div class="balance">
+                    <b><span id="balance-value"></span> BYN</b>
+                    <a href="./balance/balance.html" class="increase-balance-link">Пополнить счёт</a>
+                </div>
+                <a class="header-button log-out" id="logOut">Выйти</a>
+            </div>
+        </div>
+        <img id="burger-button" src="./img/burger-menu.svg">
+    </div>
+    <p class="tip" id="tip">У вас нет билетов. Зайдите в раздел "Купить билет".</p>
+    <div class="main" id="main">
+    </div>
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header"><img id="sidebar-arrow" src="./img/arrow.svg"></div>
+        <a href="./" class="sidebar-button">Личный кабинет</a>
+        <a href="./buy/buy.html" class="sidebar-button">Купить билет</a>
+        <a href="./balance/balance.html" class="sidebar-button">Пополнить счёт <span id="sidebar-balance-value"></span></a>
+        <a class="sidebar-button log-out" id="sidebarLogOut">Выйти</a>
+    </div>
+</body>
+<script src="./http.js"></script>
+<script src="./navigation.js"></script>
+<script src="./header.js"></script>
+<script src="./index.js"></script>
+
+</html>

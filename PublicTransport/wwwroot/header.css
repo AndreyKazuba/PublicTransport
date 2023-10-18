@@ -1,0 +1,148 @@
+.header {
+    height: 42px;
+    background-color: #6060e3;
+    display: flex;
+    align-items: center;
+    padding: 0 10px 0 20px;
+    color: white;
+}
+
+.header * {
+    cursor: default;
+}
+
+.header > h1 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 100;
+    margin-right: 40px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header-navigation-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.balance {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header-right-buttons {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.header-button {
+    padding: 7px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    background-color: #6060e3;
+    transition: .2s;
+    color: white;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.header-button:hover {
+    color: rgb(193, 193, 193);
+}
+
+.header-button.log-out {
+    background-color: rgb(251, 93, 93);
+}
+
+.header-button.log-out:hover {
+    color: white;
+    background-color: rgb(251, 68, 68);
+}
+
+.increase-balance-link {
+    font-size: 13px;
+    color: white;
+    transition: .2s;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.increase-balance-link:hover {
+    color: rgb(193, 193, 193);
+}
+
+.sidebar {
+    background-color: rgba(96, 96, 227, 0.036);
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 0;
+    height: 100vh;
+    background-color: white;
+    transition: .4s;
+    border-left: solid 1px #6060e3;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar .increase-balance-link {
+    color: #6060e3;
+}
+
+.sidebar-button {
+    color: #6060e3;
+    min-width: 220px;
+    cursor: pointer;
+    font-weight: 15px;
+    padding: 14px 14px;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+#sidebar-arrow {
+    width: 30px;
+    margin-left: 10px;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.sidebar-button.log-out {
+    color: rgb(251, 93, 93);
+    border-color: rgb(251, 93, 93);
+    border-top: solid 1px #6060e3;
+}
+
+#sidebar-balance-value {
+    color: #9e9ed5;
+    font-size: 14px;
+}
+
+.sidebar-header {
+    background-color: #6060e3;
+    height: 42px;
+    display: flex;
+    align-items: center;
+}
+
+#burger-button {
+    width: 30px;
+    -webkit-tap-highlight-color: transparent;
+    display: none;
+}
+
+@media (max-width: 670px) {
+    .header-navigation-buttons, .header-right-buttons {
+        display: none;
+    }
+
+    #burger-button {
+        display: block!important;
+    }
+}
